@@ -1,0 +1,16 @@
+##
+# LOCATIONS
+##
+
+locations:
+    # region-1-start
+    region1:
+        coordinates: {lat: 40, lon: -2}
+        techs:
+            demand_power:
+                constraints:
+                    resource: file=demand-1.csv:demand
+            ccgt:
+                constraints:
+                    energy_cap_max: 36000 # increased to ensure no unmet_demand in first timestep
+    # region-1-end
